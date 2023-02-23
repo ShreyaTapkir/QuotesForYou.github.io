@@ -1,0 +1,506 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+
+.container {
+  background-image: url("images/home-large.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+}
+
+.content {
+  padding-top: 30vh;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+  line-height: 70px;
+  font-size: 3rem;
+  color: rgb(64, 14, 50);
+}
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(64, 14, 50);
+}
+
+.btn {
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(186, 148, 209),
+    rgb(127, 102, 157)
+  );
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.btn:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(127, 102, 157),
+    rgb(186, 148, 209)
+  );
+}
+
+.midbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.error {
+  display: none;
+}
+.errorshow {
+  text-align: center;
+  background-color: rgb(235, 119, 119);
+  color: white;
+  padding: 0.5rem 2rem;
+  border: 2px solid red;
+  /* width: 20rem; */
+  font-size: 1.4rem;
+  margin-top: 50px;
+  display: block;
+}
+
+input[type="text"] {
+  padding: 0.5rem 2rem 0.5rem 0.3rem;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  border: 3px solid rgb(186, 148, 209);
+  border-radius: 10px;
+  color: rgb(64, 14, 50);
+}
+
+input[type="button"] {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 3px solid rgb(186, 148, 209);
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(186, 148, 209);
+  cursor: pointer;
+}
+
+.inp {
+  display: none;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/**************************************quotes page*******************************************/
+
+.container-2 {
+  background-image: url("images/quotes-large-Bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middiv p {
+  width: 80vh;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(64, 14, 50);
+}
+.middiv h2 {
+  text-align: end;
+  color: rgb(64, 14, 50);
+}
+
+/************************Responsiveness*************************************/
+@media only screen and (max-width: 992px) {
+  .container {
+    background-image: url("images/home-medium.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  .container-2 {
+    background-image: url("images/quotes-medium-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(186, 148, 209),
+      rgb(127, 102, 157)
+    );
+    color: white;
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+  .middiv p {
+    width: 80vh;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(64, 14, 50);
+  }
+  .middiv h2 {
+    text-align: end;
+    color: rgb(64, 14, 50);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    background-image: url("images/home-medium.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 70px;
+    font-size: 2.4rem;
+    color: rgb(64, 14, 50);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(64, 14, 50);
+  }
+  .container-2 {
+    background-image: url("images/quotes-medium-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(186, 148, 209),
+      rgb(127, 102, 157)
+    );
+    color: white;
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+  .middiv p {
+    width: 75vh;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(64, 14, 50);
+  }
+  .middiv h2 {
+    text-align: end;
+    color: rgb(64, 14, 50);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    background-image: url("images/home-small.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 70px;
+    font-size: 2.1rem;
+    color: rgb(64, 14, 50);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(64, 14, 50);
+    font-size: 1.5rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.3rem 1.8rem 0.3rem 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: rgb(64, 14, 50);
+  }
+  
+  input[type="button"] {
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(186, 148, 209);
+    cursor: pointer;
+  }
+  .errorshow {
+    text-align: center;
+    background-color: rgb(235, 119, 119);
+    color: white;
+    padding: 0.3rem 1rem;
+    border: 2px solid red;
+    /* width: 20rem; */
+    font-size: 1.2rem;
+    margin-top: 50px;
+    display: block;
+  }
+  .container-2 {
+    background-image: url("images/quotes-small-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(186, 148, 209),
+      rgb(127, 102, 157)
+    );
+    color: white;
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+  .middiv p {
+    width: 75vh;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(64, 14, 50);
+  }
+  .middiv h2 {
+    text-align: end;
+    color: rgb(64, 14, 50);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    background-image: url("images/home-small.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 1.9rem;
+    color: rgb(64, 14, 50);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(64, 14, 50);
+    font-size: 1.3rem;
+  }
+  .btn {
+    display: inline-block;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(186, 148, 209),
+      rgb(127, 102, 157)
+    );
+    color: white;
+    padding: 0.4rem 1.7rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  input[type="text"] {
+    padding: 0.3rem 1.8rem 0.3rem 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: rgb(64, 14, 50);
+  }
+  
+  input[type="button"] {
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(186, 148, 209);
+    cursor: pointer;
+  }
+  .errorshow {
+    text-align: center;
+    background-color: rgb(235, 119, 119);
+    color: white;
+    padding: 0.3rem 1rem;
+    border: 2px solid red;
+    /* width: 20rem; */
+    font-size: 1.2rem;
+    margin-top: 50px;
+    display: block;
+  }
+  .container-2 {
+    background-image: url("images/quotes-small-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+ 
+  
+  .middiv p {
+    width: 55vh;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(64, 14, 50);
+  }
+  .middiv h2 {
+    text-align: center;
+    color: rgb(64, 14, 50);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {
+    background-image: url("images/home-small.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 1.7rem;
+    color: rgb(64, 14, 50);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(64, 14, 50);
+    font-size: 1.2rem;
+  }
+  input[type="text"] {
+    padding: 0.2rem 1.4rem 0.2rem 0.2rem;
+    margin-right: 0.3rem;
+    font-size: 1rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: rgb(64, 14, 50);
+  }
+  
+  input[type="button"] {
+    padding: 0.2rem 0.8rem;
+    font-size: 1.2rem;
+    border: 3px solid rgb(186, 148, 209);
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(186, 148, 209);
+    cursor: pointer;
+  }
+  .errorshow {
+    text-align: center;
+    background-color: rgb(235, 119, 119);
+    color: white;
+    padding: 0.3rem 1rem;
+    border: 2px solid red;
+    /* width: 20rem; */
+    font-size: 1.2rem;
+    margin-top: 50px;
+    display: block;
+  }
+  .container-2 {
+    background-image: url("images/quotes-small-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    /* line-height: 100vh;  for vertically centering the text...keep the height and line height same to perfectly middle the text */
+  }
+  .btn {
+    display: inline-block;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(186, 148, 209),
+      rgb(127, 102, 157)
+    );
+    color: white;
+    padding: 0.2rem 1.2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.4rem;
+  }
+  
+  .middiv p {
+    width: 45vh;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(64, 14, 50);
+  }
+  .middiv h2 {
+    text-align: center;
+    color: rgb(64, 14, 50);
+  }
+}
+
